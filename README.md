@@ -25,6 +25,3 @@ The Phonebook Project is a simple command-line application written in C that all
 ```bash
 git clone https://github.com/yourusername/phonebook-project.git
 cd phonebook-project
-
-Acknowledgments
-This project was forced on us from college.!

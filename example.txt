@@ -1,2 +1,0 @@
-Hello, this is a sample text.
-You can add more text here.
