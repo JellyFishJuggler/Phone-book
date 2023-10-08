@@ -35,7 +35,7 @@ int addcontact(){
         fprintf(file,"%s,%s\n",names,phoneNumber);     //stores the data in the created csv file.
 
         int a;
-        printf("Contact Saved.");
+        printf("Contact Saved.\n");
         printf("You want to enter more? Presss 1 for yes 'n' 2 for no.\n");
         scanf("%d",&a);
 
