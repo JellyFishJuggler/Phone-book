@@ -8,7 +8,7 @@
 */
 #include <stdio.h>
 
-int main() {
+int readfunc() {
     // Open a file for reading
     FILE *file = fopen("example.txt", "r");
 
@@ -27,5 +27,10 @@ int main() {
     // Close the file when done
     fclose(file);
 
+    return 0;
+}
+
+int main(){
+    readfunc();
     return 0;
 }

@@ -14,7 +14,7 @@
     */
 #include <stdio.h>
 
-int main() {
+int addfunc() {
     // Open a file for writing (if it doesn't exist, it will be created)
     FILE *file = fopen("example.txt", "w");
 
@@ -31,5 +31,10 @@ int main() {
     fclose(file);
 
     printf("File created and written successfully.\n");
+    return 0;
+}
+
+int main(){
+    addfunc();
     return 0;
 }

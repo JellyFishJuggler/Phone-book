@@ -12,7 +12,7 @@ Just close the files(both of them for obv reasons.)*/
 #include<stdio.h>
 #include<string.h>
 
-int main(){
+int removefunc(){
     char entryTodelete[500];  //entries aayengi yaha joh delete krni hogi
 
     FILE *og_file = fopen("example.txt","r");  //file joh hmne add-function me bnyi thi voh open kr rhe hai.
@@ -47,4 +47,9 @@ int main(){
 
     return 0;
     
+}
+
+int main(){
+    removefunc();
+    return 0;
 }
