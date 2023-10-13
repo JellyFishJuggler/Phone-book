@@ -24,7 +24,7 @@ int main() {
     }
 
     // Write data to the file
-    fprintf(file, "Hello, this is a sample text.\n");
+    fprintf(file, "Hello\nthis is a sample text.\n");
     fprintf(file, "You can add more text here.\n");
 
     // Close the file when done
