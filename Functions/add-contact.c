@@ -9,7 +9,7 @@ int addcontact(){
     char names[100];            // an array of size of 100
     char phoneNumber[100];      //an array of size of 100
 
-    FILE *file = fopen("C:\\Users\\srija\\OneDrive\\Documents\\GitHub\\Phone-book\\contacts.csv","a");     //creates a file and writes it.
+    FILE *file = fopen("C:\\Users\\srija\\Downloads\\github_com\\Phone-book-main\\Phone-book-main\\contacts.csv","a");     //creates a file and writes it.
     if(file == NULL){
         printf("Error no file found.");
         return 1;
