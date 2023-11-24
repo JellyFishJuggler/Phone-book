@@ -1,5 +1,6 @@
 # Phonebook Project
 The Phonebook Project is a simple command-line application written in C that allows users to manage a list of contacts. It provides functionality for adding, editing, deleting, searching, and saving contacts to a CSV file. Additionally, it includes features for preventing duplicate entries and user authentication.
+It was mainly done by Srijan, Prayag, Abhishek, Saptangshu of Bhagwan Parashuram Institute of Technology under the able guidance of Ms Pratibha; of CSE-DS (G2)
 
 ## Features
 - **Add Contacts**: Users can add new contacts by providing a name and phone number.
