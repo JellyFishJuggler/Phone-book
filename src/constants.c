@@ -1,8 +1,8 @@
 // check if operating system is Windows
-#ifdef _WIN32
-int isWindows = 1;
-#else
+#ifdef __unix__
 int isWindows = 0;
+#else
+int isWindows = 1;
 #endif
 
 const char *pass = "abcd";
