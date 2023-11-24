@@ -27,18 +27,18 @@ void printBox(char *text) {
 void addContact() {
   // declarations
   char contactName[MAX_CONTACT_LEN];
-  long int contactNumber;
+  char contactNumber[11];
   FILE *file = fopen(filePath,"a");
   
   printBox("Add Contact");
   printf("Enter contact's name (or cancel): ");
-  scanf("\n%[^\n]s", (char *) &contactName);
+  scanf("\n%[^\n]s", contactName);
   if (strcmp(contactName, "cancel") == 0) return;
 
   printf("Enter contact's number: ");
-  scanf("%ld", &contactNumber);
+  scanf("\n%[^\n]s", contactNumber);
   
-  fprintf(file, "%s,%ld\n", contactName, contactNumber);
+  fprintf(file, "%s,%s\n", contactName, contactNumber);
   fclose(file);
 
   printBox("Contact Saved!");
@@ -112,13 +112,13 @@ void editContact() {
 	  fputs(line,file2);
       } else {
 	char newName[MAX_CONTACT_LEN];
-	long int newNumber;
+	char newNumber[11];
 	printf("Enter new name: ");
 	scanf("\n%[^\n]s", newName);
 	printf("Enter new number: ");
-	scanf("%ld", &newNumber);
+	scanf("\n%[^\n]s", newNumber);
 	char newString[MAX_CONTACT_LEN+15];
-	sprintf(newString, "%s,%ld\n", newName, newNumber);
+	sprintf(newString, "%s,%s\n", newName, newNumber);
 	fputs(newString, file2);
 	contactFound = true;
       }
