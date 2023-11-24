@@ -23,6 +23,13 @@ void printBox(char *text) {
   printf("\n");
 }
 
+char *removeNewline(char *str) {
+  for (int i = 0; i < strlen(str); i++) {
+    if (str[i] == '\n') str[i] = ' ';
+  }
+  return str;
+}
+
 // lists all contacts
 void addContact() {
   // declarations
@@ -74,7 +81,7 @@ void listContacts() {
 	multiplyChar(' ', MAX_CONTACT_LEN-strlen(value)-2, "", "");
 	break;
       case 2:
-	printf(" | Phone: %ld |\n", strtol(value, NULL, 10));
+	printf(" | Phone: %s|\n", removeNewline(value));
 	break;
       default:
 	break;
