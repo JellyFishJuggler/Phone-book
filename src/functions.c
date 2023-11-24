@@ -192,7 +192,7 @@ void handleMenu() {
     for (int i = 0; i < menuOptionCount; i++) {
       printf("%d. %s\n", i+1, menuOptions[i]);
     }
-    printf("Enter your choice ⟩ ");
+    printf("Enter your choice → ");
     scanf("\n%[^\n]s", (char *) &userInput);
     if (!((int) userInput[0] > 48 && (int) userInput[0] < menuOptionCount + 49)) {
       printBox("Your Input is Sus");
